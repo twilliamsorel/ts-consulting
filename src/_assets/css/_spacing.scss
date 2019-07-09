@@ -1,0 +1,57 @@
+.margin-vertical-2 {
+	margin-top: $spacing-2;
+	@extend .margin-bottom-2;
+}
+.margin-vertical-4 {
+	@extend .margin-top-4;
+	margin-bottom: $spacing-4;
+}
+.margin-vertical-10 {
+	margin-top: $spacing-10;
+	@extend .margin-bottom-10;
+}
+
+.padding-vertical-10 {
+	padding-top: $spacing-10;
+	padding-bottom: $spacing-10;
+}
+.padding-vertical-12 {
+	padding-top: $spacing-12;
+	padding-bottom: $spacing-12;
+}
+.padding-vertical-14 {
+	padding-top: $spacing-14;
+	padding-bottom: $spacing-14;
+}
+
+.margin-top-4 {
+	margin-top: $spacing-4;
+}
+.margin-top-6 {
+	margin-top: $spacing-6;
+}
+
+.margin-bottom-2 {
+	margin-bottom: $spacing-2;
+}
+.margin-bottom-4 {
+	margin-bottom: $spacing-4;
+}
+.margin-bottom-6 {
+	margin-bottom: $spacing-6;
+}
+.margin-bottom-10 {
+	margin-bottom: $spacing-10;
+}
+.margin-bottom-14 {
+	margin-bottom: $spacing-14;
+}
+
+// responsive classes
+.medium-padding-vertical-12 {
+	@extend .padding-vertical-12;
+
+	@media screen and (max-width: $screen-sm) {
+		padding-top: 0;
+	}
+}

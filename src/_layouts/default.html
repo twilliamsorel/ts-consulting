@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Trev the Dev | {{ page.title }}</title>
+		{% asset site.scss %}
+
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="icon" type="image/png" href="favicon/favicon.ico">
+		<link rel="manifest" href="favicon/site.webmanifest">
+
+		<!-- typekit fonts /-->
+		<link rel="stylesheet" href="https://use.typekit.net/nzf1wuw.css">
+		<!-- font Awesome /-->
+		<script src="https://kit.fontawesome.com/8526bdd6b8.js"></script>
+	</head>
+	<body class="{{ page.title }}">
+		{% include components/modal.html %}
+		{% include nav.html %}
+		{% include mobile-nav.html %}
+		
+		{{ content }}
+				
+		{% if page.scripts %}
+			{% for script in page.scripts %}
+				{% asset '{{ script }}' %}
+			{% endfor %}
+		{% endif %}
+
+		{% include footer.html %}
+
+		{% asset main.js %}
+	</body>
+</html>

@@ -1,0 +1,13 @@
+.btn {
+	border: 1px solid $red-100;
+	color: $font-color;
+	transition: background-color 400ms, border-color 400ms;
+	font-weight: 200;
+	font-size: $font-large;
+	padding: $spacing-base $spacing-4;
+
+	&:hover {
+		background-color: white;
+		border-color: $gray-250;
+	}
+}

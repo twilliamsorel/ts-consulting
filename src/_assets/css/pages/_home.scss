@@ -1,0 +1,33 @@
+.home {
+	header {
+		padding: $spacing-16 0 $spacing-30;
+
+		@media screen and (max-width: $screen-sm) {
+			padding: ($spacing-16 / 4) 0 ($spacing-30 / 2) 0;
+		}
+	}
+	.frame:before {
+		content: "";
+		left: 15px;
+		display: block;
+		width: calc(100% - 30px);
+		height: 100%;
+		position: absolute;
+		border: 1px solid $gray-250;
+		z-index: 0;
+		border-radius: $spacing-base;
+		transform: rotate(25deg);
+	}
+	.profile-pic {
+		position: relative;
+		width: 100%;
+		height: auto;
+		border-radius: $spacing-base;
+		z-index: 2;
+	}
+	h1 {
+		@media screen and (max-width: $screen-sm) {
+			margin-bottom: $spacing-6;
+		}
+	}
+}

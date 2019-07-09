@@ -1,0 +1,38 @@
+---
+layout: default
+title: Sleep Debt Calculator 
+scripts: 
+  - sleep-calculator.js
+---
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.min.js"></script>
+
+{% include/molecules/header.html text="Sleep Debt Calculator" %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<canvas id="myChart" width="400" height="400"></canvas>
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12">
+					<form id="optimal_rest">
+						<input placeholder="Optimal Sleep Time" type='text' name="optimal" />
+						<button class="btn margin-top-4">set value</button>
+					</form>
+					<br>
+					<form id="num_hours">
+						<input placeholder="Hours Slept" type='text' name="hours" />
+						<button class="btn margin-top-4">add value(s)</button>
+					</form>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<span>Percent Rested:</span><output></output>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,18 @@
+<div class="component two-cols {{ include.classes }}">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 {% if include.img_position == 'right' %} order-md-12 {% endif %}">
+				{% if include.img_path %}
+					<div class="img-section" style="background-image: url({% asset '{{ include.img_path }}' @path %})">
+					</div>
+				{% endif %}
+			</div>
+			<div class="col-sm-6 {% if include.img_position == 'right' %} order-md-1 {% endif %} {% if include.text == 'small' %} my-auto {% endif %}">
+				<h3 class="margin-bottom-4">{{ include.header | default: "This is a Header" }}</h3>
+				<p class="large">
+					{{ include.body | default: "This is the body content." }}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

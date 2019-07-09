@@ -1,0 +1,51 @@
+---
+title: Why My Service
+layout: default
+---
+
+<section>
+	<div class="container">
+		{% include molecules/header.html text="Why My Service" classes="form-spacing margin-bottom-10" %}
+	</div>
+	
+	{% capture body %}
+		If so, you're not alone. <strong>It can be hard for engineering departments to free up man power to address marketing needs</strong>. This is especially true in smaller companies and startup organizations, where teams are small and the product demanding. This leaves marketers in the dark, without resources to ship new content and develop their funnels.
+	{% endcapture %}
+	{% include components/two-cols.html
+		img_path="lacking.png"
+		img_position="right"
+		classes="margin-bottom-14"
+		header="Lacking Engineering Resources?"
+		body=body %}
+
+	{% capture body %}
+		When you hire a dedicated resource, your projects aren't put off for code reviews, or new product features. <strong>As an independent resource dedicated to your department, I have the bandwidth to focus on your project and move quickly</strong>.
+	{% endcapture %}
+	{% include components/two-cols.html 
+		text="small"
+		img_path="priority.png"
+		classes="margin-bottom-14"
+		header="You are my priority"
+		body=body %}
+
+	{% capture body %}
+		I've had years of experience working with marketing departments&mdash;first as a web developer, and later as a front-end engineer dedicated to marketing needs. <strong>I am an expert in this space</strong>, and understand the marketing side of the business. I prioritize my work with that in mind. This means I focus on delivery, so that you can iterate quickly and develop your funnel.
+	{% endcapture %}
+	{% include components/two-cols.html 
+		classes="margin-bottom-14"
+		img_position="right"
+		img_path="knowledge2.png"
+		header="I know What Marketing Departments Value"
+		body=body %}
+
+	{% capture body %}
+		For most of my career, I've sat between the two worlds of marketing and engineering, learning to speak the language of each. This experience has given me valuble insights into the nature of an organization, and how to navigate it. With this experience, <strong>I can provide valuble context</strong> to help your organization navigate the tricky hurdles that can exist between these departments.
+	{% endcapture %}
+	{% include components/two-cols.html
+		header="I am a Bridge"
+		img_path="greeting.png"
+		body=body
+		classes="margin-bottom-10" %}
+
+</section>
+{% include components/cta.html %}

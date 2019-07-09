@@ -1,0 +1,41 @@
+// color variables
+$gray-100: #f9f9f9;
+$gray-250: #b4b4b4;
+$gray-300: #ddd;
+$gray-400: #444;
+$gray-700: #777;
+$red-100: #bd0000;
+
+$font-color: $gray-400;
+
+// spacing variables
+$spacing-base: 5px;
+$spacing-2: $spacing-base * 2; // 10px
+$spacing-3: $spacing-base * 3; // 15px
+$spacing-4: $spacing-base * 4; // 20px
+$spacing-5: $spacing-base * 5; // 25px
+$spacing-6: $spacing-base * 6; // 30px
+$spacing-8: $spacing-base * 8; // 40px
+$spacing-10: $spacing-base * 10; // 50px
+$spacing-12: $spacing-base * 12; // 60px
+$spacing-14: $spacing-base * 14; // 70px
+$spacing-16: $spacing-base * 16; // 80px
+$spacing-25: $spacing-base * 25; // 125px
+$spacing-30: $spacing-base * 30; // 150px
+$spacing-40: $spacing-base * 40; // 200px
+
+
+// font size
+$font-small: 14px;
+$font-base: 16px;
+$font-large: 20px;
+$font-size-nav: 30px;
+
+// layering
+$nav-layer: 3;
+
+// screen sizes
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;

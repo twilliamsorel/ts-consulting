@@ -1,0 +1,15 @@
+.component.divider {
+	.icon {
+		position: absolute;
+		color: rgba(0, 0, 0, 0.6);
+		width: 80px;
+		margin: $spacing-base auto 0 auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+
+		span {
+			font-size: $font-small;
+		}
+	}
+}

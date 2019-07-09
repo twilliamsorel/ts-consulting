@@ -1,0 +1,55 @@
+@import 'bootstrap';
+
+@import 'variables';
+@import 'typography';
+@import 'spacing';
+@import 'nav';
+@import 'footer';
+@import 'buttons';
+@import 'form';
+
+@import 'molecules/header';
+
+@import 'components/divider';
+@import 'components/cta';
+@import 'components/two-cols';
+@import 'components/modal';
+
+@import 'pages/home';
+
+section {
+	padding: $spacing-8 0;
+
+	@media screen and (max-width: $screen-sm) {
+		padding: ($spacing-8 / 2) 0;
+	}
+}
+
+hr {
+	margin: 0;
+}
+
+.hero-highlight {
+	border-color: $red-100;
+	width: 50%;
+	position: absolute;
+	margin: 0;
+	bottom: 0;
+	border-width: 2px;
+
+	@media screen and (max-width: $screen-sm) {
+		left: 25%;
+	} 
+}
+
+.text-center {
+	text-align: center;
+}
+
+// backgrounds
+.bg-gray {
+	background-color: #f9f9f9;
+}
+.bg-gray-gradient {
+	background: linear-gradient(to right, #ededed, 40%, white);
+}
