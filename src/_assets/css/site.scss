@@ -17,6 +17,10 @@
 
 @import 'pages/home';
 
+body {
+	height: 100vh;
+}
+
 section {
 	padding: $spacing-8 0;
 
