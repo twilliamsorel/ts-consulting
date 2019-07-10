@@ -29,6 +29,10 @@ nav.main {
 			animation: forward;
 			transition: 200ms font-size;
 
+			&.icon {
+				font-size: 22px;
+			}
+
 			.line {
 				width: 0%;
 				height: 1px;
