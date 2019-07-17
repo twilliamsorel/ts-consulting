@@ -2,9 +2,10 @@
 	var nav = document.querySelector('nav.main');
 
 	window.addEventListener('scroll', function (e) {
-		if (e.pageY > 70) 
+		if (window.pageYOffset > 70) {
 			nav.classList.add('fixed');
-		else 
+		} else {
 			nav.classList.remove('fixed');
+		}
 	});
 }());
